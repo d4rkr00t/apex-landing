@@ -1,0 +1,16 @@
+Fonts bundled with this site
+============================
+
+Bebas Neue          — bebas-neue-latin.woff2
+JetBrains Mono      — jetbrains-mono-latin.woff2 (variable, covers 400 and 700)
+
+Both are licensed under the SIL Open Font License, Version 1.1, which permits
+redistribution and self-hosting. Full licence text:
+https://openfontlicense.org/
+
+Bebas Neue    © Ryoichi Tsunekawa, Dharma Type
+JetBrains Mono © JetBrains s.r.o.
+
+These are the `latin` subsets only, taken from the Google Fonts CDN. The site is
+English-only; if other scripts are ever needed, fetch the matching subsets rather
+than falling back to the CDN.
