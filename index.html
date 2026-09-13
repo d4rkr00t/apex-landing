@@ -37,13 +37,7 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <!-- APP STORE LINKS — PLACEHOLDER, MUST BE REPLACED BEFORE THIS SITE GOES LIVE.
-     All three CTAs point at https://apps.apple.com/app/id0000000000, which 404s.
-     The real numeric app ID only exists once the App Store Connect record is created
-     (docs/PRE_RELEASE.md section 6, "App record created"). Swap it in with:
-       grep -rl 'id0000000000' site | xargs sed -i '' 's/id0000000000/id<REAL_ID>/g'
-     Find every link with: grep -n 'data-appstore' site/index.html -->
-
+    <!-- App Store links: replace id0000000000 with the real app ID. All tagged data-appstore. -->
     <nav class="site">
       <div class="wrap navin">
         <a class="logo" href="#top">
@@ -233,9 +227,7 @@
             nothing.
           </p>
         </div>
-        <!-- PRICES — EDITABLE. Three figures, all USD, currently matching Products.storekit.
-         They also live in App Store Connect; if they change there, change them here.
-         Grep `data-price` to find all three. -->
+        <!-- Prices in USD. Keep in sync with the App Store. All tagged data-price. -->
         <ul class="plans">
           <li class="plan">
             <div class="nm">MONTHLY</div>
