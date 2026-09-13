@@ -1,209 +1,322 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Apex &mdash; Lifting, progressed for you.</title>
-<meta name="description" content="An offline iPhone training log that plans every session, prescribes the weight, and progresses it for you. No account.">
-<meta name="theme-color" content="#0E0E0E">
-<meta property="og:title" content="Apex &mdash; Lifting, progressed for you.">
-<meta property="og:description" content="An offline iPhone training log that plans every session, prescribes the weight, and progresses it for you. No account.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://apex.sysoev.org/">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="preload" href="/fonts/bebas-neue-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/fonts/jetbrains-mono-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/style.css">
-</head>
-<body>
-
-<!-- APP STORE LINKS — PLACEHOLDER, MUST BE REPLACED BEFORE THIS SITE GOES LIVE.
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Apex &mdash; Lifting, progressed for you.</title>
+    <meta
+      name="description"
+      content="An offline iPhone training log that plans every session, prescribes the weight, and progresses it for you. No account."
+    />
+    <meta name="theme-color" content="#0E0E0E" />
+    <meta
+      property="og:title"
+      content="Apex &mdash; Lifting, progressed for you."
+    />
+    <meta
+      property="og:description"
+      content="An offline iPhone training log that plans every session, prescribes the weight, and progresses it for you. No account."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://apex.sysoev.org/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="/fonts/bebas-neue-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/jetbrains-mono-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- APP STORE LINKS — PLACEHOLDER, MUST BE REPLACED BEFORE THIS SITE GOES LIVE.
      All three CTAs point at https://apps.apple.com/app/id0000000000, which 404s.
      The real numeric app ID only exists once the App Store Connect record is created
      (docs/PRE_RELEASE.md section 6, "App record created"). Swap it in with:
        grep -rl 'id0000000000' site | xargs sed -i '' 's/id0000000000/id<REAL_ID>/g'
      Find every link with: grep -n 'data-appstore' site/index.html -->
 
-<nav class="site">
-  <div class="wrap navin">
-    <a class="logo" href="#top">
-      <span class="mark" aria-hidden="true"><svg viewBox="0 0 100 100"><rect x="22.4" y="22.4" width="55.2" height="55.2" rx="13" fill="none" stroke="currentColor" stroke-width="3.3"/><rect x="39.25" y="39.25" width="21.5" height="21.5" rx="4.7" fill="currentColor"/></svg></span>
-      <span class="wm">APEX</span>
-    </a>
-    <div class="nlinks">
-      <a href="#how">How it works</a>
-      <a href="#progress">Progress</a>
-      <a href="#pricing">Pricing</a>
-    </div>
-    <a class="cta" href="https://apps.apple.com/app/id0000000000" data-appstore>Get the app</a>
-  </div>
-</nav>
-
-<div class="wrap hero" id="top">
-  <div>
-    <span class="pill"><s></s>Offline first &middot; no signal needed</span>
-    <h1>Lifting,<br>progressed<br>for you.</h1>
-    <p class="body">Apex holds your programme, runs the session, and decides what comes
-    next. Weights and reps arrive pre-filled from last time, progression is calculated from
-    what you actually lifted, and when a lift stalls the app changes the plan instead of
-    waiting for you to notice.</p>
-    <div class="hcall">
-      <div class="hcall__t"><span class="hcall__ring"></span>Offline first</div>
-      <p class="hcall__s">Everything lives on the device. No signal, no problem.</p>
-    </div>
-    <div class="btns">
-      <a class="cta lg" href="https://apps.apple.com/app/id0000000000" data-appstore>Start training</a>
-      <a class="cta lg gh" href="#how">See how it works</a>
-    </div>
-    <div class="note">iOS 16.4 and later &middot; no ads, no feed, no account &middot; 14 days to cancel, free</div>
-  </div>
-  <div class="heroart">
-    <!-- Empty capture slot. Replace the inner div with
-         <img src="shot-session.png" alt="..." class="phone__slot"> once section 7
-         produces a 1320x2868 screenshot. Frame stays as-is. -->
-    <div class="phone"><div class="phone__slot">Screenshot &mdash; session</div></div>
-  </div>
-</div>
-
-<section id="how">
-  <div class="wrap">
-    <div class="shead">
-      <div>
-        <div class="kick">01 &mdash; What it does</div>
-        <h2>Three things, done properly.</h2>
+    <nav class="site">
+      <div class="wrap navin">
+        <a class="logo" href="#top">
+          <span class="mark" aria-hidden="true"
+            ><svg viewBox="0 0 100 100">
+              <rect
+                x="22.4"
+                y="22.4"
+                width="55.2"
+                height="55.2"
+                rx="13"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="3.3"
+              />
+              <rect
+                x="39.25"
+                y="39.25"
+                width="21.5"
+                height="21.5"
+                rx="4.7"
+                fill="currentColor"
+              /></svg
+          ></span>
+          <span class="wm">APEX</span>
+        </a>
+        <div class="nlinks">
+          <a href="#how">How it works</a>
+          <a href="#progress">Progress</a>
+          <a href="#pricing">Pricing</a>
+        </div>
+        <a
+          class="cta"
+          href="https://apps.apple.com/app/id0000000000"
+          data-appstore
+          >Get the app</a
+        >
       </div>
-      <p class="body">No social feed, no streaks, no coaching voice. Apex builds the
-      programme, runs the session, and keeps the record.</p>
-    </div>
-    <ul class="grid3">
-      <li class="cell">
-        <div class="num">01</div>
-        <h3>Build the programme</h3>
-        <p class="body">Start from one of four hand-written templates, or let Apex generate
-        a split around the muscles you want to prioritise and the time you actually have.
-        Edit any of it afterwards.</p>
-      </li>
-      <li class="cell">
-        <div class="num">02</div>
-        <h3>Run the session</h3>
-        <p class="body">Every set arrives pre-filled from last time. Tick it and the rest
-        timer starts. Change a weight mid-session and the sets below it follow.</p>
-      </li>
-      <li class="cell">
-        <div class="num">03</div>
-        <h3>Keep the record</h3>
-        <p class="body">Every set you complete is stored and becomes the baseline for next
-        time. Your history stays on your phone and exports to a file whenever you want it.</p>
-      </li>
-    </ul>
-  </div>
-</section>
+    </nav>
 
-<div class="wrap">
-
-  <div class="split">
-    <div class="txt">
-      <div class="kick">02 &mdash; Programmes</div>
-      <h3>Your split, or one built for you.</h3>
-      <p class="body">Pick a template and start, or answer three questions and let the
-      generator do it &mdash; which muscles matter, how many days you train, how long a
-      session can run. It rotates movements so you are not hammering the same pattern two
-      days running, and it will not put a muscle on consecutive days.</p>
-      <ul class="specs">
-        <li class="spec">Templates included<b>4</b></li>
-        <li class="spec">Exercise library<b>1394</b></li>
-        <li class="spec">Every exercise<b>Photo + video</b></li>
-        <li class="spec">Units<b>KG / LB</b></li>
-      </ul>
-    </div>
-    <div class="art">
-      <!-- Empty capture slot — see the hero comment. -->
-      <div class="phone"><div class="phone__slot">Screenshot &mdash; programme</div></div>
-    </div>
-  </div>
-
-  <div class="split rev">
-    <div class="txt">
-      <div class="kick">03 &mdash; Progress</div>
-      <h3 id="progress">It changes the plan before you do.</h3>
-      <p class="body">Apex reads what you completed and sets the next session from it. Stall
-      repeatedly and it does not simply repeat the weight: it moves to a different target, cuts
-      the volume to let you recover, or offers a different movement altogether. Weekly sets
-      per muscle are scored against what the research says actually grows it.</p>
-      <ul class="specs">
-        <li class="spec">Progression states<b>Normal / pivot / deload</b></li>
-        <li class="spec">Volume zones<b>3</b></li>
-        <li class="spec">Stalled lifts<b>Auto-handled</b></li>
-        <li class="spec">Apple Health<b>Write only</b></li>
-      </ul>
-    </div>
-    <div class="art">
-      <!-- Empty capture slot — see the hero comment. -->
-      <div class="phone"><div class="phone__slot">Screenshot &mdash; progress</div></div>
-    </div>
-  </div>
-
-</div>
-
-<section id="pricing">
-  <div class="wrap">
-    <div class="shead">
+    <div class="wrap hero" id="top">
       <div>
-        <div class="kick">04 &mdash; Pricing</div>
-        <h2>Pay once a year, or once.</h2>
+        <span class="pill"><s></s>Offline first &middot; no signal needed</span>
+        <h1>Lifting,<br />progressed<br />for you.</h1>
+        <p class="body">
+          Apex holds your programme, runs the session, and decides what comes
+          next. Weights and reps arrive pre-filled from last time, progression
+          is calculated from what you actually lifted, and when a lift stalls
+          the app changes the plan instead of waiting for you to notice.
+        </p>
+        <div class="hcall">
+          <div class="hcall__t">
+            <span class="hcall__ring"></span>Offline first
+          </div>
+          <p class="hcall__s">
+            Everything lives on the device. No signal, no problem.
+          </p>
+        </div>
+        <div class="btns">
+          <a
+            class="cta lg"
+            href="https://apps.apple.com/app/id0000000000"
+            data-appstore
+            >Start training</a
+          >
+          <a class="cta lg gh" href="#how">See how it works</a>
+        </div>
+        <div class="note">
+          iOS 16.4 and later &middot; no ads, no feed, no account &middot; 14
+          days to cancel, free
+        </div>
       </div>
-      <p class="body">Every plan unlocks the same app. Cancel within 14 days and you pay
-      nothing.</p>
+      <div class="heroart">
+        <div class="phone">
+          <img src="/assets/session.png" alt="..." class="phone__slot" />
+        </div>
+      </div>
     </div>
-    <!-- PRICES — EDITABLE. Three figures, all USD, currently matching Products.storekit.
+
+    <section id="how">
+      <div class="wrap">
+        <div class="shead">
+          <div>
+            <div class="kick">01 &mdash; What it does</div>
+            <h2>Three things, done properly.</h2>
+          </div>
+          <p class="body">
+            No social feed, no streaks, no coaching voice. Apex builds the
+            programme, runs the session, and keeps the record.
+          </p>
+        </div>
+        <ul class="grid3">
+          <li class="cell">
+            <div class="num">01</div>
+            <h3>Build the programme</h3>
+            <p class="body">
+              Start from one of four hand-written templates, or let Apex
+              generate a split around the muscles you want to prioritise and the
+              time you actually have. Edit any of it afterwards.
+            </p>
+          </li>
+          <li class="cell">
+            <div class="num">02</div>
+            <h3>Run the session</h3>
+            <p class="body">
+              Every set arrives pre-filled from last time. Tick it and the rest
+              timer starts. Change a weight mid-session and the sets below it
+              follow.
+            </p>
+          </li>
+          <li class="cell">
+            <div class="num">03</div>
+            <h3>Keep the record</h3>
+            <p class="body">
+              Every set you complete is stored and becomes the baseline for next
+              time. Your history stays on your phone and exports to a file
+              whenever you want it.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <div class="split">
+        <div class="txt">
+          <div class="kick">02 &mdash; Programmes</div>
+          <h3>Your split, or one built for you.</h3>
+          <p class="body">
+            Pick a template and start, or answer three questions and let the
+            generator do it &mdash; which muscles matter, how many days you
+            train, how long a session can run. It rotates movements so you are
+            not hammering the same pattern two days running, and it will not put
+            a muscle on consecutive days.
+          </p>
+          <ul class="specs">
+            <li class="spec">Templates included<b>4</b></li>
+            <li class="spec">Exercise library<b>1394</b></li>
+            <li class="spec">Every exercise<b>Photo + video</b></li>
+            <li class="spec">Units<b>KG / LB</b></li>
+          </ul>
+        </div>
+        <div class="art">
+          <div class="phone">
+            <img src="/assets/program.png" alt="..." class="phone__slot" />
+          </div>
+        </div>
+      </div>
+
+      <div class="split rev">
+        <div class="txt">
+          <div class="kick">03 &mdash; Progress</div>
+          <h3 id="progress">It changes the plan before you do.</h3>
+          <p class="body">
+            Apex reads what you completed and sets the next session from it.
+            Stall repeatedly and it does not simply repeat the weight: it moves
+            to a different target, cuts the volume to let you recover, or offers
+            a different movement altogether. Weekly sets per muscle are scored
+            against what the research says actually grows it.
+          </p>
+          <ul class="specs">
+            <li class="spec">
+              Progression states<b>Normal / pivot / deload</b>
+            </li>
+            <li class="spec">Volume zones<b>3</b></li>
+            <li class="spec">Stalled lifts<b>Auto-handled</b></li>
+            <li class="spec">Apple Health<b>Write only</b></li>
+          </ul>
+        </div>
+        <div class="art">
+          <div class="phone">
+            <img src="/assets/volume.png" alt="..." class="phone__slot" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="pricing">
+      <div class="wrap">
+        <div class="shead">
+          <div>
+            <div class="kick">04 &mdash; Pricing</div>
+            <h2>Pay once a year, or once.</h2>
+          </div>
+          <p class="body">
+            Every plan unlocks the same app. Cancel within 14 days and you pay
+            nothing.
+          </p>
+        </div>
+        <!-- PRICES — EDITABLE. Three figures, all USD, currently matching Products.storekit.
          They also live in App Store Connect; if they change there, change them here.
          Grep `data-price` to find all three. -->
-    <ul class="plans">
-      <li class="plan">
-        <div class="nm">MONTHLY</div>
-        <div class="pr"><span class="cur">$</span><b data-price="monthly">12.99</b><s>/ mo</s></div>
-        <div class="d">The baseline. No commitment, billed monthly, every month.</div>
-      </li>
-      <li class="plan on">
-        <div class="nm">YEARLY</div>
-        <div class="pr"><span class="cur">$</span><b data-price="yearly">69.99</b><s>/ yr</s></div>
-        <div class="d">Works out to $5.83 a month, against 12 months at $12.99.</div>
-        <span class="bdg">SAVE 55%</span>
-      </li>
-      <li class="plan">
-        <div class="nm">LIFETIME</div>
-        <div class="pr"><span class="cur">$</span><b data-price="lifetime">149.99</b><s>once</s></div>
-        <div class="d">One payment. Every future release, for as long as the app exists.</div>
-      </li>
-    </ul>
-    <ul class="feats">
-      <li><b>Everything unlocked</b>All templates, the generator, and the full exercise library.</li>
-      <li><b>Auto progression</b>Loads, deloads and movement swaps decided session to session.</li>
-      <li><b>Your data, exportable</b>Full history to a file, any time, no account required.</li>
-      <li><b>No account</b>Nothing to sign up for, log into, or be logged out of.</li>
-    </ul>
-  </div>
-</section>
+        <ul class="plans">
+          <li class="plan">
+            <div class="nm">MONTHLY</div>
+            <div class="pr">
+              <span class="cur">$</span><b data-price="monthly">12.99</b
+              ><s>/ mo</s>
+            </div>
+            <div class="d">
+              The baseline. No commitment, billed monthly, every month.
+            </div>
+          </li>
+          <li class="plan on">
+            <div class="nm">YEARLY</div>
+            <div class="pr">
+              <span class="cur">$</span><b data-price="yearly">69.99</b
+              ><s>/ yr</s>
+            </div>
+            <div class="d">
+              Works out to $5.83 a month, against 12 months at $12.99.
+            </div>
+            <span class="bdg">SAVE 55%</span>
+          </li>
+          <li class="plan">
+            <div class="nm">LIFETIME</div>
+            <div class="pr">
+              <span class="cur">$</span><b data-price="lifetime">149.99</b
+              ><s>once</s>
+            </div>
+            <div class="d">
+              One payment. Every future release, for as long as the app exists.
+            </div>
+          </li>
+        </ul>
+        <ul class="feats">
+          <li>
+            <b>Everything unlocked</b>All templates, the generator, and the full
+            exercise library.
+          </li>
+          <li>
+            <b>Auto progression</b>Loads, deloads and movement swaps decided
+            session to session.
+          </li>
+          <li>
+            <b>Your data, exportable</b>Full history to a file, any time, no
+            account required.
+          </li>
+          <li>
+            <b>No account</b>Nothing to sign up for, log into, or be logged out
+            of.
+          </li>
+        </ul>
+      </div>
+    </section>
 
-<div class="wrap closer">
-  <h2>Next session is already written.</h2>
-  <p class="body">Install it, pick a template, and walk in knowing the weight on the bar.</p>
-  <div class="btns"><a class="cta lg" href="https://apps.apple.com/app/id0000000000" data-appstore>Start training</a></div>
-  <div class="note">Free for 14 days &middot; cancel in two taps</div>
-</div>
+    <div class="wrap closer">
+      <h2>Next session is already written.</h2>
+      <p class="body">
+        Install it, pick a template, and walk in knowing the weight on the bar.
+      </p>
+      <div class="btns">
+        <a
+          class="cta lg"
+          href="https://apps.apple.com/app/id0000000000"
+          data-appstore
+          >Start training</a
+        >
+      </div>
+      <div class="note">Free for 14 days &middot; cancel in two taps</div>
+    </div>
 
-<footer class="site">
-  <div class="wrap fin2">
-    <span>&copy; 2026 Stanislav Sysoev</span>
-    <span class="lk">
-      <a href="#how">How it works</a>
-      <a href="#pricing">Pricing</a>
-      <a href="/support/">Support</a>
-      <a href="/terms/">Terms</a>
-      <a href="/privacy/">Privacy</a>
-    </span>
-  </div>
-</footer>
-
-</body>
+    <footer class="site">
+      <div class="wrap fin2">
+        <span>&copy; 2026 Stanislav Sysoev</span>
+        <span class="lk">
+          <a href="#how">How it works</a>
+          <a href="#pricing">Pricing</a>
+          <a href="/support/">Support</a>
+          <a href="/terms/">Terms</a>
+          <a href="/privacy/">Privacy</a>
+        </span>
+      </div>
+    </footer>
+  </body>
 </html>
